@@ -1,0 +1,40 @@
+:root {
+    /* Background colors (neutrals) */
+    --neutral1: rgb(194, 216, 204);
+    --neutral2: rgb(129, 161, 143);
+    --neutral3: rgb(74, 108, 90);   /* Main shade */
+    --neutral4: rgb(40, 71, 53);
+    --neutral5: rgb(18, 43, 29);
+
+    /* Brand color shades */
+    --brand1: rgb(156, 242, 196);
+    --brand2: rgb(112, 236, 170);
+    --brand3: rgb(57, 228, 137);
+    --brand4: rgb(28, 226, 119);    /* Main shade */
+    --brand5: rgb(14, 167, 85);
+    --brand6: rgb(7, 101, 51);
+    --brand7: rgb(2, 61, 30);
+
+    /* Supporting colors */
+    --success: green;
+    --warning: orange;
+    --danger: red;
+
+    /* Primary and accent colors */
+    --colorprimary: var(--brand6);
+    --coloraccent: var(--brand4);
+    --colorbackground: var(--neutral1);
+
+    /* Dynamic sizing and font setup */
+    --ff: 'Ubuntu', sans-serif;
+    --h1-size: clamp(36px, 5vw, 48px);
+    --h2-size: clamp(24px, 4vw, 32px);
+    --h3-size: clamp(18px, 3vw, 24px);
+    --p-size: clamp(16px, 2.5vw, 24px);
+    --links-size: clamp(14px, 2vw, 18px);
+
+    /* Additional setup */
+    --transition: 0.3s ease-in-out;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --card-radius: 8px;
+}

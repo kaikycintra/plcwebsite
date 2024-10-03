@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Local htmx setup -->
+    <script src="{% static 'website/scripts/htmx.min.js' %}"></script>
+    <!-- Ubuntu font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'website/styles/layout.css' %}">
+    {% block head %}
+    {% endblock %}
+    <title>{% block title %}PLC Electric Parts{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <!-- Logo -->
+            <img src="{% static 'website/images/logo.svg' %}" alt="PLC Electric Parts Logo">
+            PLC Electric Parts
+        </h1>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; {{ current_year }} PLC Electric Parts. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
